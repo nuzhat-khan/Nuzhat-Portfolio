@@ -39,12 +39,16 @@ body {
     transition: all 0.3s ease;
 }
 
-.nav-item:hover,
-.nav-item.active {
+.nav-item:not(.active):hover{
     background: linear-gradient(135deg, #FF9A8B, #FECF6A);
     border-color: #FFE3B3;
     color: #5A2342;
     transform: translateY(-3px);
+}
+.nav-item.active {
+    background: linear-gradient(135deg, #FF9A8B, #FECF6A);
+    border-color: #FFE3B3;
+    color: #5A2342;
 }
 
 .main-content {
@@ -105,7 +109,7 @@ h1 span {
 
 .subtitle {
     font-family: 'Poppins', sans-serif;
-    font-weight: 300;
+    font-weight: 500;
     font-size: 26px;
     font-style: italic;
     margin-bottom: 15px;
@@ -114,7 +118,7 @@ h1 span {
 
 .description {
     font-family: 'Poppins', sans-serif;
-    font-weight: 300;
+    font-weight: 400;
     font-size: 17px;
     color: rgba(255, 255, 255, 0.8);
     margin-bottom: 40px;
@@ -131,7 +135,7 @@ h1 span {
     padding: 14px 30px;
     border-radius: 18px;
     font-weight: 600;
-    box-shadow: 0 6px 18px rgba(212, 175, 55, 0.35);
+    box-shadow: 0 6px 18px rgba(212, 175, 55, 0.349);
     transition: transform 0.2s, box-shadow 0.2s;
 }
 
