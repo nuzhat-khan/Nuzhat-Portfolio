@@ -228,3 +228,15 @@ h1 span {
     color: white;
     transform: translateY(-3px);
 }
+
+@media (max-width: 968px) {
+            .main-content {
+                flex-direction: column-reverse;
+                text-align: center;
+            }
+            .greeting { justify-content: center; }
+            .greeting::after { display: none; }
+            .navbar { justify-content: center; }
+            .social-icons { justify-content: center; }
+            .profile-circle { width: 300px; height: 300px; }
+        }
