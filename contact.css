@@ -67,7 +67,7 @@ body {
     margin-top: 20px;
 }
 
-/* --- Left Side Info Panel --- */
+
 .contact-info {
     background: rgba(255, 255, 255, 0.03);
     border: 1px solid rgba(255, 255, 255, 0.12);
@@ -171,7 +171,7 @@ body {
     transform: translateY(-3px);
 }
 
-/* --- Right Side Form Panel --- */
+
 .contact-form {
     background: rgba(255, 255, 255, 0.03);
     border: 1px solid rgba(255, 255, 255, 0.12);
@@ -218,7 +218,7 @@ body {
     color: rgba(255, 255, 255, 0.3);
 }
 
-/* Submit Button */
+
 .submit-btn {
     display: inline-flex;
     align-items: center;
@@ -243,7 +243,6 @@ body {
     box-shadow: 0 5px 15px rgba(217, 150, 91, 0.3);
 }
 
-/* --- Responsive Layout --- */
 @media (max-width: 768px) {
     .contact-container {
         grid-template-columns: 1fr;
