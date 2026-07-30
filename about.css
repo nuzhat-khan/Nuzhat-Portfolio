@@ -14,10 +14,15 @@ body {
 }
 
 .navbar {
-    margin: 0 auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;      
+    z-index: 1000;
     padding: 20px 3%;
     display: flex;
     gap: 15px;
+    background: rgb(104, 26, 65);
 }
 
 .nav-item {
@@ -46,7 +51,7 @@ body {
 
 .container {
     max-width: 1440px;
-    margin: 0 auto;
+    margin: 100px auto;
     padding: 0 10%;
 }
 
@@ -111,10 +116,9 @@ body {
 
 .stat-card {
     position: relative;
-
     transition: transform 0.3s ease, background-color 0.3s ease;
     border-radius: 8px; 
-    padding: 10px 0;
+    padding: 30px 0;
 }
 
 .stat-card:hover {
@@ -181,24 +185,24 @@ body {
 
 .education-item {
     position: relative;
-    padding-left: 25px;
+    padding-left: 30px;
     border-left: 3px solid rgba(255, 255, 255, 0.2);
-
+    background-color: rgba(188, 160, 188, 0.25);
     transition: all 0.3s ease;
     border-radius: 10px;
-    padding-right: 15px;
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding-right: 30px;
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 .education-item:hover {
-    background-color: rgb(217, 217, 217, 0.05);
+    background-color: rgba(249, 185, 242, 0.25);
     border-left-color: #d9965b; 
-    padding-left: 30px; 
+    transform: translateY(-4px); 
 }
 
 .education-item:hover .edu-icon {
-    transform: scale(1.1) rotate(-10deg);
+    transform: scale(1.1) rotate(-15deg);
 }
 
 .edu-icon {
@@ -261,6 +265,7 @@ body {
 }
 
 .skill-category {
+    background-color: rgba(188, 160, 188, 0.25);
     position: relative;
     transition: all 0.3s ease;
     border-radius: 10px;
@@ -268,8 +273,8 @@ body {
 }
 
 .skill-category:hover {
-    background-color: rgba(255, 255, 255, 0.04);
-    transform: translateX(5px); 
+    background-color: rgba(249, 185, 242, 0.25);
+    transform: translateY(5px); 
 }
 
 

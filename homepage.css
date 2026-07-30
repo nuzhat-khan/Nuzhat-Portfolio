@@ -10,6 +10,7 @@ body {
     background: repeating-linear-gradient(90deg,
             rgb(104, 26, 65) 4%,
             rgb(114, 25, 76) 8%);
+
 }
 
 .page {
@@ -36,12 +37,13 @@ body {
     transition: all 0.3s ease;
 }
 
-.nav-item:not(.active):hover{
+.nav-item:not(.active):hover {
     background: linear-gradient(135deg, #FF9A8B, #FECF6A);
     border-color: #FFE3B3;
     color: #5A2342;
     transform: translateY(-3px);
 }
+
 .nav-item.active {
     background: linear-gradient(135deg, #FF9A8B, #FECF6A);
     border-color: #FFE3B3;
@@ -230,13 +232,24 @@ h1 span {
 }
 
 @media (max-width: 968px) {
-            .main-content {
-                flex-direction: column-reverse;
-                text-align: center;
-            }
-            .greeting { justify-content: center; }
-            .greeting::after { display: none; }
-            .navbar { justify-content: center; }
-            .social-icons { justify-content: center; }
-            .profile-circle { width: 300px; height: 300px; }
-        }
+    .main-content {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+    .greeting {
+        justify-content: center;
+    }
+    .greeting::after {
+        display: none;
+    }
+    .navbar {
+        justify-content: center;
+    }
+    .social-icons {
+        justify-content: center;
+    }
+    .profile-circle {
+        width: 300px;
+        height: 300px;
+    }
+}
