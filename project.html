@@ -12,6 +12,11 @@
 <body>
 
     <header>
+        <button class="hamburger" id="hamburger-btn" aria-label="Toggle Navigation">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
         <nav class="navbar">
             <a href="index.html" class="nav-item">Home</a>
             <a href="about.html" class="nav-item">About</a>
@@ -140,7 +145,7 @@
                 <div class="project-content">
                     <h3 class="project-title">Java Practice Problems</h3>
                     <p class="project-description">
-                        A collection of Java practice problems with clean, 
+                        A collection of Java practice problems with clean,
                         beginner-friendly solutions to strengthen problem-solving skills.
                     </p>
                     <div class="project-tech-stack">
@@ -158,7 +163,23 @@
 
         </section>
     </main>
+    <script>
+        const hamburger = document.getElementById('hamburger-btn');
+        const navMenu = document.querySelector('.navbar');
+        const navLinks = document.querySelectorAll('.nav-item');
 
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            navMenu.classList.toggle('active');
+        });
+
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                hamburger.classList.remove('active');
+                navMenu.classList.remove('active');
+            });
+        });
+    </script>
 </body>
 
 </html>

@@ -13,6 +13,11 @@
 
 
     <header>
+        <button class="hamburger" id="hamburger-btn" aria-label="Toggle Navigation">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
         <nav class="navbar">
             <a href="index.html" class="nav-item">Home</a>
             <a href="about.html" class="nav-item">About</a>
@@ -60,7 +65,8 @@
                             class="fa-brands fa-github"></i></a>
                     <a href="https://www.linkedin.com/" target="_blank" class="icon-link linkedin" title="LinkedIn"><i
                             class="fa-brands fa-linkedin-in"></i></a>
-                    <a href="mailto:nuzhatkhanarpa2005@gmail.com" class="icon-link gmail" title="Gmail"><i class="fa-solid fa-envelope"></i></a>
+                    <a href="mailto:nuzhatkhanarpa2005@gmail.com" class="icon-link gmail" title="Gmail"><i
+                            class="fa-solid fa-envelope"></i></a>
                 </div>
             </div>
 
@@ -99,7 +105,23 @@
 
         </section>
     </main>
+    <script>
+        const hamburger = document.getElementById('hamburger-btn');
+        const navMenu = document.querySelector('.navbar');
+        const navLinks = document.querySelectorAll('.nav-item');
 
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            navMenu.classList.toggle('active');
+        });
+
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                hamburger.classList.remove('active');
+                navMenu.classList.remove('active');
+            });
+        });
+    </script>
 </body>
 
 </html>

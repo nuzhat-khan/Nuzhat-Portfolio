@@ -243,12 +243,147 @@ body {
     box-shadow: 0 5px 15px rgba(217, 150, 91, 0.3);
 }
 
-@media (max-width: 768px) {
+.hamburger {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    z-index: 101;
+}
+
+.hamburger .bar {
+    width: 100%;
+    height: 3px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+
+@media (max-width: 1024px) {
+    .container {
+        padding-left: 6%;
+        padding-right: 6%;
+        margin-top: 80px;
+    }
+
+    .hamburger {
+        display: flex;
+        position: fixed;
+        top: 20px;
+        right: 25px;
+        z-index: 1001;
+    }
+
+    .navbar {
+        position: fixed;
+        top: 0;
+        left: auto;
+        right: -100%;
+        width: 250px;
+        height: 100vh;
+        background-color: rgb(104, 26, 65);
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 25px;
+        box-shadow: -5px 0 15px rgba(0, 0, 0, 0.5);
+        transition: right 0.4s ease-in-out;
+        z-index: 1000;
+    }
+
+    .navbar.active {
+        right: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(9px) rotate(45deg);
+        background-color: #e60067;
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-9px) rotate(-45deg);
+        background-color: #e60067;
+    }
+
     .contact-container {
         grid-template-columns: 1fr;
+        gap: 25px;
     }
 
     .submit-btn {
         width: 100%;
+    }
+
+    .section-tag {
+        font-size: 38px;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .container {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .section-tag {
+        font-size: 32px;
+    }
+
+    .contact-info h3 {
+        font-size: 24px;
+    }
+
+    .info-desc {
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+
+    .info-item p {
+        font-size: 16px;
+    }
+
+    .contact-info,
+    .contact-form {
+        padding: 16px;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .section-tag {
+        font-size: 28px;
+    }
+
+    .contact-info h3 {
+        font-size: 20px;
+    }
+
+    .info-desc {
+        font-size: 16px;
+    }
+
+    .social-icons {
+        justify-content: center;
+    }
+
+    .info-item {
+        gap: 10px;
+    }
+
+    .info-icon {
+        width: 36px;
+        height: 36px;
+        font-size: 14px;
     }
 }

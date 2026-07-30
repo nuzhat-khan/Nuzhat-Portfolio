@@ -113,7 +113,7 @@ body {
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4), 0 0 15px rgba(217, 150, 91, 0.15);
 }
 
-/* --- Image & Overlay --- */
+
 .project-image-container {
     position: relative;
     width: 100%;
@@ -233,15 +233,122 @@ body {
     color: #d9965b;
 }
 
+.hamburger {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    z-index: 101;
+}
 
-@media (max-width: 900px) {
+.hamburger .bar {
+    width: 100%;
+    height: 3px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+@media (max-width: 1024px) {
+    .container {
+        padding: 0 6%;
+        margin-top: 80px;
+    }
+
+    .hamburger {
+        display: flex;
+        position: fixed;
+        top: 20px;
+        right: 25px;
+        z-index: 1001;
+    }
+
+    .navbar {
+        position: fixed;
+        top: 0;
+        left: auto;
+        right: -100%;
+        width: 250px;
+        height: 100vh;
+        background-color: rgb(104, 26, 65);
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 25px;
+        box-shadow: -5px 0 15px rgba(0, 0, 0, 0.5);
+        transition: right 0.4s ease-in-out;
+        z-index: 1000;
+    }
+
+    .navbar.active {
+        right: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(9px) rotate(45deg);
+        background-color: #e60067;
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-9px) rotate(-45deg);
+        background-color: #e60067;
+    }
+
     .projects-grid {
-        grid-template-columns: repeat(2, 1fr);
+        column-gap: 40px;
+        row-gap: 30px;
+    }
+
+    .section-tag {
+        font-size: 38px;
     }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
+    .container {
+        padding: 0 5%;
+    }
+
+    .section-tag {
+        font-size: 32px;
+    }
+
+    .about-description {
+        font-size: 17px;
+        text-align: left;
+    }
+
     .projects-grid {
         grid-template-columns: 1fr;
+        gap: 30px;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .section-tag {
+        font-size: 28px;
+    }
+
+    .project-title {
+        font-size: 22px;
+    }
+
+    .project-description {
+        font-size: 15px;
+        text-align: left;
+    }
+
+    .project-image-container {
+        height: 200px;
     }
 }

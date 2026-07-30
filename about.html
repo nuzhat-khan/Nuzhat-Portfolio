@@ -10,13 +10,20 @@
 </head>
 
 <body>
-    <header><nav class="navbar">
-        <a href="index.html" class="nav-item">Home</a>
-        <a href="about.html" class="nav-item active">About</a>
-        <a href="project.html" class="nav-item">Projects</a>
-        <a href="achievement.html" class="nav-item">Achievements</a>
-        <a href="contact.html" class="nav-item">Contact</a>
-    </nav></header>
+    <header>
+        <button class="hamburger" id="hamburger-btn" aria-label="Toggle Navigation">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
+        <nav class="navbar">
+            <a href="index.html" class="nav-item">Home</a>
+            <a href="about.html" class="nav-item active">About</a>
+            <a href="project.html" class="nav-item">Projects</a>
+            <a href="achievement.html" class="nav-item">Achievements</a>
+            <a href="contact.html" class="nav-item">Contact</a>
+        </nav>
+    </header>
 
     <main class="container">
         <section class="about-section">
@@ -133,7 +140,23 @@
             </div>
         </section>
     </main>
+    <script>
+        const hamburger = document.getElementById('hamburger-btn');
+        const navMenu = document.querySelector('.navbar');
+        const navLinks = document.querySelectorAll('.nav-item');
 
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            navMenu.classList.toggle('active');
+        });
+
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                hamburger.classList.remove('active');
+                navMenu.classList.remove('active');
+            });
+        });
+    </script>
 </body>
 
 </html>
