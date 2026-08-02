@@ -14,12 +14,11 @@ https://www.figma.com/proto/wHg4nCn9U4Od9zzUDJm3SU/Personal-Portfolio-Website?no
 ## Features
 
 - Responsive design for desktop, tablet, and mobile devices
-- Home page with introduction, social media links, and CV download
+- Home page with introduction, social media links and CV download
 - About Me section
 - Education section
 - Projects showcase with GitHub repository links
 - Achievements section
-- Publications section
 - Contact Me form integrated with FormSubmit
 - Responsive navigation bar with hamburger menu for smaller devices
 - Clean and consistent user interface
