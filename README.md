@@ -2,11 +2,14 @@
 
 A responsive personal portfolio website developed using **HTML5**, **CSS3**, and **JavaScript (ES6)**. The website showcases my academic background, technical skills, projects, achievements, publications, and contact information in a clean and professional interface.
 
-## Live Demo https://nuzhat-khan.github.io/Nuzhat-Portfolio/
+## Live Demo 
+https://nuzhat-khan.github.io/Nuzhat-Portfolio/
 
-## GitHub Repository https://github.com/nuzhat-khan/Nuzhat-Portfolio
+## GitHub Repository 
+https://github.com/nuzhat-khan/Nuzhat-Portfolio
 
-## Figma Prototype: https://www.figma.com/proto/wHg4nCn9U4Od9zzUDJm3SU/Personal-Portfolio-Website?node-id=102-3&t=bY2zJiFX4GOpuZAA-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1
+## Figma Prototype: 
+https://www.figma.com/proto/wHg4nCn9U4Od9zzUDJm3SU/Personal-Portfolio-Website?node-id=102-3&t=bY2zJiFX4GOpuZAA-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1
 
 ## Features
 
@@ -61,13 +64,13 @@ To run this project locally:
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/REPOSITORY_NAME.git
+git clone https://github.com/nuzhat-khan/Nuzhat-Portfolio
 ```
 
 2. Navigate to the project directory:
 
 ```bash
-cd REPOSITORY_NAME
+cd Nuzhat-Portfolio
 ```
 
 3. Open the project folder in Visual Studio Code or your preferred editor.
